@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HCalc Alpha</title>
+    <script>
+        function one() {
+            document.getElementById("content").value += "1";
+        }
+        function two() {
+            document.getElementById("content").value += "2";
+        }
+        function three() {
+            document.getElementById("content").value += "3";
+        }
+        function four() {
+            document.getElementById("content").value += "4";
+        }
+        function five() {
+            document.getElementById("content").value += "5";
+        }
+        function six() {
+            document.getElementById("content").value += "6";
+        }
+        function seven() {
+            document.getElementById("content").value += "7";
+        }
+        function eight() {
+            document.getElementById("content").value += "8";
+        }
+        function nine() {
+            document.getElementById("content").value += "9";
+        }
+        function zero() {
+            document.getElementById("content").value += "0";
+        }
+        function point() {
+            document.getElementById("content").value += ".";
+        }
+        function left() {
+            document.getElementById("content").value += "(";
+        }
+        function right() {
+            document.getElementById("content").value += ")";
+        }
+        function plus() {
+            document.getElementById("content").value += "+";
+        }
+        function minus() {
+            document.getElementById("content").value += "-";
+        }
+        function multiply() {
+            document.getElementById("content").value += "*";
+        }
+        function divide() {
+            document.getElementById("content").value += "/";
+        }
+        function result() {
+            document.getElementById("content").value = eval(document.getElementById("content").value);
+            if (document.getElementById("content").value == "undefined") {
+                document.getElementById("content").value = "您的输入有误，请检查后重新输入！"
+            }
+        }
+        function allClear() {
+            document.getElementById("content").value = "";
+        }
+    </script>
+</head>
+
+<body>
+    <div style="text-align: center; ">
+        <h2>HCalc Alpha</h2>
+        <h3>by Hurrieam on 20200108</h3>
+        <textarea id="content"></textarea><br>
+        <button onclick="one()">1</button>
+        <button onclick="two()">2</button>
+        <button onclick="three()">3</button><br>
+        <button onclick="four()">4</button>
+        <button onclick="five()">5</button>
+        <button onclick="six()">6</button><br>
+        <button onclick="seven()">7</button>
+        <button onclick="eight()">8</button>
+        <button onclick="nine()">9</button><br>
+        <button onclick="zero()" style="width: 50px;">0</button>
+        <button onclick="point()">.</button><br>
+        <br>
+        <button onclick="left()" style="width: 100px;">(</button>
+        <button onclick="right()" style="width: 100px;">)</button><br>
+        <br>
+        <button onclick="plus()" style="width: 50px;">+</button>
+        <button onclick="minus()" style="width: 50px;">-</button>
+        <button onclick="multiply()" style="width: 50px;">×</button>
+        <button onclick="divide()" style="width: 50px;">÷</button>
+        <br>
+        <button onclick="result()" style="width: 200px;">=</button><br>
+        <br>
+        <button onclick="allClear()" style="width: 200px;">AC</button><br>
+    </div>
+</body>
+
+</html>
